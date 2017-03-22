@@ -69,7 +69,7 @@
     src: url('../fonts/roboto-regular-webfont.woff2') format('woff2'), url('../fonts/roboto-regular-webfont.woff') format('woff');
 }
 /* colors & mixins */
-.flex-block
+.flexBlock
 {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -120,7 +120,9 @@ body
 {
     font: 16px/1.2 Arial, sans-serif;
 
-    min-width: 320px;
+    position: relative;
+
+    min-width: 1180px;
 
     color: #898888;
 }
