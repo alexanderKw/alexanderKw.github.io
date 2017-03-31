@@ -223,6 +223,8 @@ body
 
     width: 23%;
     height: 100%;
+
+    z-index: -1;
 }
 .wr-background-1 .background-1
 {
@@ -240,6 +242,8 @@ body
 
     width: 33%;
     height: 100%;
+    
+    z-index: -1;
 }
 .wr-background-2 .background-2
 {
