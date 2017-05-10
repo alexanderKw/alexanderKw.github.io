@@ -86,3 +86,8 @@ window.addEventListener('scroll', function (e) {
     });
   });
 });
+
+console.log(window.innerHeight);
+sections.forEach(function (s) {
+  s.style.height = window.innerHeight + 'px';
+});
