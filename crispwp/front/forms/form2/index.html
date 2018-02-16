@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Form 2</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <div class="wr-form">
+    <h1>Форма заказа 	&#10077;Сандали&#10078;</h1>
+    <em class="tagline">Хотите приобрести такие сандали, которых ни у кого нет? Закажите обувь у нас - и вам будут завидовать все окружающие!</em>
+    <form action="http://rightman.p.ht/lwd/contest.php" method="post" onsubmit="_onSubmit(event)">
+
+      <fieldset class="top-fieldset">
+        <legend>Сведения о заказчике</legend>
+        <ul>
+          <li><label for="name">Имя:<input type="text" name="name" id="name"></label></li>
+          <li><label for="email">Email:<input type="email" name="email" id="email"></label></li>
+          <li><label for="phone">Телефон:<input type="tel" name="phone" id="phone"></label></li>
+          <li><label for="story">Я хочу такие сандали, потому что...<br><textarea name="story" id="story">Не более 300 символов...</textarea></label></li>
+        </ul>
+      </fieldset>
+
+      <h2>Выберите дизайн сандалей:</h2>
+      <fieldset class="characteristics-fieldset">
+        <legend>Характеристики</legend>
+
+        <fieldset>
+          <legend>Цвет <em>(выберите один пункт)</em>:</legend>
+          <ul>
+            <li><label for="red"><input type="radio" name="color" value="red" id="red">Красный</label></li>
+            <li><label for="blue"><input type="radio" name="color" value="blue" id="blue">Синий</label></li>
+            <li><label for="black"><input type="radio" name="color" value="black" id="black">Черный</label></li>
+            <li><label for="silver"><input type="radio" name="color" value="silver" id="silver">Серебряный</label></li>
+          </ul>
+        </fieldset>
+
+        <fieldset>
+          <legend>Дополнительно <em>(выберите один или несколько пунктов)</em></legend>
+          <ul>
+            <li><label for="glossy-strokes"><input type="checkbox" name="features[]" value="glossy-strokes" id="glossy-strokes">Глянцевые обводки</label></li>
+            <li><label for="metal-plaque"><input type="checkbox" name="features[]" value="metal-plaque" id="metal-plaque" checked>Металлическая бляшка</label></li>
+            <li><label for="glowing-outsole"><input type="checkbox" name="features[]" value="glowing-outsole" id="glowing-outsole">Светящаяся подошва</label></li>
+            <li><label for="player"><input type="checkbox" name="features[]" value="player" id="player">Mp2-проигрыватель</label></li>
+          </ul>
+        </fieldset>
+
+        <fieldset>
+          <legend>Размер</legend>
+          <p><select name="size" id="">
+            <option value="33">33</option>
+            <option value="34">34</option>
+            <option value="35">35</option>
+            <option value="36">36</option>
+            <option value="37">37</option>
+            <option value="38">38</option>
+            <option value="39">39</option>
+            <option value="40">40</option>
+            <option value="41">41</option>
+            <option value="42">42</option>
+            <option value="43">43</option>
+          </select></p>
+        </fieldset>
+
+      </fieldset>
+
+      <input type="submit" name="order" value="Заказать!">
+      <input type="reset" value="Сброс">
+    </form>
+  </div>
+  
+  <script>
+    var int = document.querySelector('input[name="order"]');
+    function _onSubmit(e) {
+      e.preventDefault();
+      int.value = 'Заказ сделан!';
+    }
+  </script>
+</body>
+</html>

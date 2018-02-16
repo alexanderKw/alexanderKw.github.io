@@ -1,0 +1,22 @@
+.wr-gradient {
+  width: 600px;
+  height: 94px;
+  margin: auto;
+  line-height: 90px;
+  text-align: center;
+  background: linear-gradient(
+    to top right,
+    purple 10%,
+    crimson 30%,
+    orangered 50%,
+    gold 75%
+  );
+}
+.gradient-text {
+  color: #fff;
+  font: 11px/13px Arial, Helvetica, sans-serif;
+  vertical-align: middle;
+  display: inline-block;
+  text-shadow: 0 1px 1px purple, 1px 0 1px purple, -1px 0 1px purple,
+    0 -1px 1px purple;
+}

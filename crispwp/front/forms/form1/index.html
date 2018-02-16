@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Form 1</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <div class="wrapper">
+
+    <h1>Форма заявки на работу в зоопарке</h1>
+    <em class="tagline">Пожалуйста заполните форму. Обязательные поля помечены <span class="require-label">&#9913;</span></em>
+    <form action="#" method="post" name="vacancy">
+      <fieldset>
+        <legend>Контактная Информация</legend>
+        <ul class="contacts-info">
+          <li>
+            <label for="name"><span class="field-name">Имя <span class="require-label">&#9913;</span></span>
+              <input type="text" name="name" id="name">
+            </label>
+          </li>
+          <li>
+            <label for="phone"><span class="field-name">Телефон</span>
+              <input type="tel" name="phone" id="phone">
+            </label>
+          </li>
+          <li>
+            <label for="email"><span class="field-name">Email <span class="require-label">&#9913;</span></span>
+              <input type="email" name="email" id="email">
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset>
+        <legend>Персональная информация</legend>
+        <ul class="personal-info">
+          <li>
+            <label for="age"><span class="field-name">Возраст <span class="require-label">&#9913;</span></span>
+              <input type="text" name="age" id="age">
+            </label>
+          </li>
+          <li><span class="field-name">Пол</span>
+            <select name="gender" id="gender">
+              <option value="female">Женщина</option>
+              <option value="male">Мужчина</option>
+            </select>
+          </li>
+          <li>
+            <label for="personal-qualities"><span class="field-name">Перечислите личные качества</span>
+              <textarea name="personal-qualities" id="personal-qualities" cols="30" rows="10"></textarea>
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset>
+        <legend>Выберите ваших любимых животных</legend>
+        <ul class="animal-list">
+          <li><label for="zebra"><input type="checkbox" name="favorite-animals" id="zebra" value="Zebra">Зебра</label></li>
+          <li><label for="cat"><input type="checkbox" name="favorite-animals" id="cat" value="Cat">Кошак</label></li>
+          <li><label for="anaconda"><input type="checkbox" name="favorite-animals" id="anaconda" value="Anaconda">Анаконда</label></li>
+          <li><label for="human"><input type="checkbox" name="favorite-animals" id="human" value="Human">Человек</label></li>
+          <li><label for="elephant"><input type="checkbox" name="favorite-animals" id="elephant" value="Elephant">Слон</label></li>
+          <li><label for="antelope"><input type="checkbox" name="favorite-animals" id="antelope" value="Antelope">Антилопа</label></li>
+          <li><label for="dove"><input type="checkbox" name="favorite-animals" id="dove" value="Dove">Голубь</label></li>
+          <li><label for="crab"><input type="checkbox" name="favorite-animals" id="crab" value="Crab">Краб</label></li>
+        </ul>
+      </fieldset>
+
+      <button type="submit">Отправить информацию</button>
+    </form>
+
+  </div>
+  
+</body>
+</html>
