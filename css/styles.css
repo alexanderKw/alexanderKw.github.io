@@ -1,0 +1,118 @@
+ul,
+h1,
+h2,
+h3,
+body
+{
+    margin: 0;
+    padding: 0;
+}
+
+ul
+{
+    list-style: none;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+body
+{
+    font: 16px/1.2 Arial, Helvetica, sans-serif;
+
+    color: #4e4c67;
+}
+
+.header
+{
+    padding: 20px;
+}
+
+.heading
+{
+    margin-bottom: 20px;
+
+    text-align: center;
+}
+
+.main-heading
+{
+    font-size: 28px;
+}
+
+.list-heading
+{
+    font-size: 23px;
+}
+
+.lists-row
+{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+.row-inner
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    padding: 20px 10px 20px;
+
+    text-align: center;
+
+    border: 1px solid #fff;
+    border-radius: 8px;
+    background-color: rgba(220, 214, 247, .33333);
+    -webkit-box-shadow: 2px 1px 6px 1px #4e4c67;
+            box-shadow: 2px 1px 6px 1px #4e4c67;
+
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+.list-block
+{
+    min-width: 300px;
+
+    -ms-flex-preferred-size: 25%;
+    flex-basis: 25%;
+}
+
+.work-heading
+{
+    font-size: 18px;
+
+    text-decoration: underline;
+    text-transform: capitalize;
+}
+
+.list li
+{
+    margin-bottom: 5px;
+
+    text-transform: capitalize;
+}
+
+.list a
+{
+    display: block;
+
+    padding: 8px;
+
+    -webkit-transition: all .3s;
+            transition: all .3s;
+
+    color: #985f6f;
+}
+
+.list a:hover
+{
+    background: #dcd6f7;
+}
