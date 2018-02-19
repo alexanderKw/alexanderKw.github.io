@@ -30,6 +30,12 @@ body
     padding: 20px;
 }
 
+.main
+{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
 .heading
 {
     margin-bottom: 20px;
