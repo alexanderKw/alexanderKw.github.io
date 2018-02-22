@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Modal 2</title>
+  <style>
+    .mark {
+      background-color: #eee;
+      padding: 10px 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h3>Код:</h3>
+  <code>
+    <pre class="mark">
+      var adminValue = prompt('Кто пришел?');
+      var passwordValue;
+
+      if (adminValue == 'Админ') {
+        passwordValue = prompt('Пароль?');
+        if (passwordValue == 'Чёрный Властелин') {
+          document.write('Добро пожаловать!');
+        } else if (passwordValue == null || passwordValue == '') {
+          document.write('Вход отменен');
+        } else {
+          document.write('Пароль неверен');
+        }
+      } else if (adminValue == null || adminValue == '') {
+        document.write('Вход отменен');
+      } else {
+        document.write('Я вас не знаю');
+      }
+    </pre>
+  </code>
+
+  <h3>Результат:</h3>
+
+  <script>
+
+    var adminValue = prompt('Кто пришел?');
+    var passwordValue;
+
+    if (adminValue == 'Админ') {
+      passwordValue = prompt('Пароль?');
+      if (passwordValue == 'Чёрный Властелин') {
+        document.write('Добро пожаловать!');
+      } else if (passwordValue == null || passwordValue == '') {
+        document.write('Вход отменен');
+      } else {
+        document.write('Пароль неверен');
+      }
+    } else if (adminValue == null || adminValue == '') {
+      document.write('Вход отменен');
+    } else {
+      document.write('Я вас не знаю');
+    }
+
+  </script>
+
+</body>
+
+</html>

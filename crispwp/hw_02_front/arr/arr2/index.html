@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Arr 2</title>
+  <style>
+    .mark {
+      background-color: #eee;
+      padding: 10px 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h3>Код:</h3>
+  <code>
+    <pre class="mark">
+      var fruitsArr = ['апельсин', 'банан', 'груша'];
+
+      document.write('Количество фруктов: ', fruitsArr.length, '&lt;br&gt;');
+
+      fruitsArr.push('яблоко', 'ананас');
+      fruitsArr.unshift('грейпфрут');
+
+      document.write('Количество фруктов: ', fruitsArr.length, '&lt;br&gt;');
+
+      fruitsArr.pop();
+      fruitsArr.shift();
+
+      document.write('Количество фруктов: ', fruitsArr.length, '&lt;br&gt;');
+    </pre>
+  </code>
+
+  <h3>Результат:</h3>
+
+  <script>
+
+    var fruitsArr = ['апельсин', 'банан', 'груша'];
+
+    document.write('Количество фруктов: ', fruitsArr.length, '<br>');
+
+    fruitsArr.push('яблоко', 'ананас');
+    fruitsArr.unshift('грейпфрут');
+
+    document.write('Количество фруктов: ', fruitsArr.length, '<br>');
+
+    fruitsArr.pop();
+    fruitsArr.shift();
+
+    document.write('Количество фруктов: ', fruitsArr.length, '<br>');
+
+  </script>
+
+</body>
+
+</html>
