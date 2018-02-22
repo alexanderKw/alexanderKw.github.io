@@ -19,11 +19,11 @@
   <h3>Код:</h3>
   <code>
     <pre class="mark">
-      var adminValue = prompt('Кто пришел?');
+      var adminValue = prompt('Кто пришел?', '');
       var passwordValue;
 
       if (adminValue == 'Админ') {
-        passwordValue = prompt('Пароль?');
+        passwordValue = prompt('Пароль?', '');
         if (passwordValue == 'Чёрный Властелин') {
           document.write('Добро пожаловать!');
         } else if (passwordValue == null || passwordValue == '') {
@@ -43,11 +43,11 @@
 
   <script>
 
-    var adminValue = prompt('Кто пришел?');
+    var adminValue = prompt('Кто пришел?', '');
     var passwordValue;
 
     if (adminValue == 'Админ') {
-      passwordValue = prompt('Пароль?');
+      passwordValue = prompt('Пароль?', '');
       if (passwordValue == 'Чёрный Властелин') {
         document.write('Добро пожаловать!');
       } else if (passwordValue == null || passwordValue == '') {
