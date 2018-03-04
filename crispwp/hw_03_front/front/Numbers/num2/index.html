@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Numbers 2</title>
+  <style>
+    .mark {
+      background-color: #eee;
+      padding: 10px 0;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h3>Код:</h3>
+  <code>
+    <pre class="mark">
+      var myArray = ['100 попугаев', '201 рубль', '624 доллара', '109 кроликов', '33 весельчака', '62 кабана'];
+
+      function getNumbers(arr) {
+        for (var i = 0; i &lt; arr.length; i++) {
+          arr[i] = parseInt(arr[i]);
+        }
+
+        return arr;
+      }
+
+      document.write(getNumbers(myArray));
+    </pre>
+  </code>
+
+  <h3>Результат:</h3>
+
+  <script>
+
+    var myArray = ['100 попугаев', '201 рубль', '624 доллара', '109 кроликов', '33 весельчака', '62 кабана'];
+
+    function getNumbers(arr) {
+      for (var i = 0; i < arr.length; i++) {
+        arr[i] = parseInt(arr[i]);
+      }
+
+      return arr;
+    }
+
+    document.write(getNumbers(myArray));
+
+  </script>
+
+</body>
+
+</html>

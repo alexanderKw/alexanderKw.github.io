@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Numbers 4</title>
+  <style>
+    .mark {
+      background-color: #eee;
+      padding: 10px 0;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h3>Код:</h3>
+  <code>
+    <pre class="mark">
+      var randSimbol = ['10.5', 15, 112, 77.6, 'no number'];
+
+      function getFixedNums(arr) {
+        for (var i = 0; i &lt; randSimbol.length; i++) {
+          if (!isNaN(arr[i])) {
+            arr[i] = +arr[i];
+            arr[i] = arr[i].toFixed(2);
+          } else {
+            arr[i] = '"' + arr[i] + '"' + ' - это не число';
+          }
+        }
+  
+        return arr;
+      }
+  
+      document.write(getFixedNums(randSimbol));
+    </pre>
+  </code>
+
+  <h3>Результат:</h3>
+
+  <script>
+
+    var randSimbol = ['10.5', 15, 112, 77.6, 'no number'];
+
+    function getFixedNums(arr) {
+      for (var i = 0; i < randSimbol.length; i++) {
+        if (!isNaN(arr[i])) {
+          arr[i] = +arr[i];
+          arr[i] = arr[i].toFixed(2);
+        } else {
+          arr[i] = '"' + arr[i] + '"' + ' - это не число';
+        }
+      }
+
+      return arr;
+    }
+
+    document.write(getFixedNums(randSimbol));
+
+  </script>
+
+</body>
+
+</html>

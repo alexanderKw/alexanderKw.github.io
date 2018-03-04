@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>String 8</title>
+  <style>
+    .mark {
+      background-color: #eee;
+      padding: 10px 0;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h3>Код:</h3>
+  <code>
+    <pre class="mark">
+      var string = 'my-short-string';
+
+      function getCamelCase(str) {
+        var stringArr = str.split('-');
+
+        for (var i = 0; i &lt; stringArr.length; i++) {
+          stringArr[i] = stringArr[i].charAt(0).toUpperCase() + stringArr[i].slice(1);
+        }
+        return stringArr.join('');
+      }
+
+      document.write(getCamelCase(string));
+    </pre>
+  </code>
+
+  <h3>Результат:</h3>
+
+  <script>
+
+    var string = 'my-short-string';
+
+    function getCamelCase(str) {
+      var stringArr = str.split('-');
+
+      for (var i = 0; i < stringArr.length; i++) {
+        stringArr[i] = stringArr[i].charAt(0).toUpperCase() + stringArr[i].slice(1);
+      }
+      return stringArr.join('');
+    }
+
+    document.write(getCamelCase(string));
+
+  </script>
+
+</body>
+
+</html>

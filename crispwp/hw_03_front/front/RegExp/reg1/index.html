@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>RegExp 1</title>
+  <style>
+    .mark {
+      background-color: #eee;
+      padding: 10px 0;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h3>Код:</h3>
+  <code>
+    <pre class="mark">
+      var forTesting = '8 пингвинов и 9 карасей.';
+
+      function getFirstSymbol(str) {
+        var reg = new RegExp(/\d/);
+        var result = str.search(reg);
+        var answer = '';
+  
+        if (result == 0) {
+          answer = 'Содержимое строки начинается с цифры';
+        } else {
+          answer = 'Содержимое строки не начинается с цифры';
+        }
+  
+        document.write(answer);
+      }
+  
+      getFirstSymbol(forTesting);
+    </pre>
+  </code>
+
+  <h3>Результат:</h3>
+
+  <script>
+
+    'use strict';
+
+    var forTesting = '8 пингвинов и 9 карасей.';
+
+    function getFirstSymbol(str) {
+      var reg = new RegExp(/\d/);
+      var result = str.search(reg);
+      var answer = '';
+
+      if (result == 0) {
+        answer = 'Содержимое строки начинается с цифры';
+      } else {
+        answer = 'Содержимое строки не начинается с цифры';
+      }
+
+      document.write(answer);
+    }
+
+    getFirstSymbol(forTesting);
+
+  </script>
+
+</body>
+
+</html>

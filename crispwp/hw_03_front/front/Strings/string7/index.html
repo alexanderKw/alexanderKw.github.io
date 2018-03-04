@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>String 7</title>
+  <style>
+    .mark {
+      background-color: #eee;
+      padding: 10px 0;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h3>Код:</h3>
+  <code>
+    <pre class="mark">
+      var string = 'Создайте функцию truncate(str, maxlength).';
+
+      function truncate(str, maxlength) {
+        if (str.length > maxlength) {
+          return str.slice(0, maxlength - 3) + '...';
+        }
+
+        return str;
+      }
+
+      document.write(truncate(string, 15));
+    </pre>
+  </code>
+
+  <h3>Результат:</h3>
+
+  <script>
+
+    var string = 'Создайте функцию truncate(str, maxlength).';
+
+    function truncate(str, maxlength) {
+      if (str.length > maxlength) {
+        return str.slice(0, maxlength - 3) + '...';
+      }
+
+      return str;
+    }
+
+    document.write(truncate(string, 15));
+
+  </script>
+
+</body>
+
+</html>

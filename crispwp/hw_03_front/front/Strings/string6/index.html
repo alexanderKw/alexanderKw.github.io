@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>String 6</title>
+  <style>
+    .mark {
+      background-color: #eee;
+      padding: 10px 0;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h3>Код:</h3>
+  <code>
+    <pre class="mark">
+      var students = ['Илья', 'Greg', 'Алина'];
+
+      for (var i = 0; i &lt; students.length; i++) {
+        var student = students[i];
+        for (var j = 0; j &lt; student.length; j++) {
+          if (student.charCodeAt(j) &lt; 1040 || student.charCodeAt(j) &gt; 1103) {
+            document.write('В элементе ' + '&lt;b&gt;' + student + '&lt;/b&gt;' + ' буква ' + '&lt;b&gt;' + student[j] + '&lt;/b&gt;' + ' не попадает в диапазон русских букв ' + '&lt;br&gt;');
+          }
+        }
+      }
+    </pre>
+  </code>
+
+  <h3>Результат:</h3>
+
+  <script>
+
+    var students = ['Илья', 'Greg', 'Алина'];
+
+    for (var i = 0; i < students.length; i++) {
+      var student = students[i];
+      for (var j = 0; j < student.length; j++) {
+        if (student.charCodeAt(j) < 1040 || student.charCodeAt(j) > 1103) {
+          document.write('В элементе ' + '<b>' + student + '</b>' + ' буква ' + '<b>' + student[j] + '</b>' + ' не попадает в диапазон русских букв ' + '<br>');
+        }
+      }
+    }
+
+  </script>
+
+</body>
+
+</html>
