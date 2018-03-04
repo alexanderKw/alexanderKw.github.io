@@ -161,6 +161,7 @@ body
 .list-block
 {
     min-width: 300px;
+    margin-bottom: 30px;
 
     -ms-flex-preferred-size: 25%;
     flex-basis: 25%;
