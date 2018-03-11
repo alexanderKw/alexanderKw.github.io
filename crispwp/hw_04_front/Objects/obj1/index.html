@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Object 1</title>
+  <style>
+    .mark {
+      background-color: #eee;
+      padding: 10px 0;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h3>Задание:</h3>
+
+  <p>Есть объект salaries с зарплатами. Напишите код, который выведет сумму всех зарплат. Если объект пустой, то результат должен
+    быть 0.
+    <br> var salaries = {
+    <br> "Вася": 100,
+    <br> "Петя": 300,
+    <br> "Даша": 250
+    <br> };
+    <br> //... 650
+  </p>
+
+  <h3>Код:</h3>
+  <code>
+    <pre class="mark">
+      var salaries = {
+        'Вася': 100,
+        'Петя': 300,
+        'Даша': 250
+      };
+      
+      function getSumSalaries(obj) {
+        var sum = 0;
+      
+        for (var key in obj) {
+          if (!isNaN(obj[key])) {
+            sum += +obj[key];
+          }
+        }
+      
+        return sum;
+      }
+      
+      document.write(getSumSalaries(salaries));
+    </pre>
+  </code>
+
+  <h3>Результат:</h3>
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>

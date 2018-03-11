@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Recursion 3</title>
+  <style>
+    .mark {
+      background-color: #eee;
+      padding: 10px 0;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h3>Задание:</h3>
+  <div>
+    <p>1) Напишите функцию , которая последовательно выводит в консоль числа от 1 до 20, с интервалом между числами 100 мс.
+      То есть, весь вывод должен занимать 2000 мс, в течение которых каждые 100 мс в консоли появляется очередное число.
+      Функция должна использовать setInterval.
+      <br>
+      <br> 2) Сделайте то же самое, но с использованием рекурсивного setTimeout вместо setInterval.
+    </p>
+  </div>
+
+  <h3>Код:</h3>
+  <code>
+    <pre class="mark">
+      // Interval
+      function outputIntervalNums() {
+        var i = 1;
+        var timer = setInterval(function() {
+          console.log(i);
+          if (i == 20) clearInterval(timer);
+          i++;
+        }, 100);
+      }
+      outputIntervalNums();
+
+      // Timeout
+      function outputTimeoutNums() {
+        var i = 1;
+        var timer = setTimeout(function numsCount() {
+          console.log(i);
+          if (i &lt; 20) {
+            setTimeout(numsCount, 100);
+          }
+          i++;
+        }, 0);
+      }
+      outputTimeoutNums();
+    </pre>
+  </code>
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>

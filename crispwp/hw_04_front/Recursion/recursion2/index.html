@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Recursion 2</title>
+  <style>
+    .mark {
+      background-color: #eee;
+      padding: 10px 0;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h3>Задание:</h3>
+  <div>
+    <p>Напишите функцию которая будет спрашивать у пользователя число(n) и будет вычислять сумму чисел от 1 до n, например:
+      <br> sumTo(1) = 1
+      <br> sumTo(2) = 2 + 1 = 3
+      <br> sumTo(3) = 3 + 2 + 1 = 6
+      <br> sumTo(4) = 4 + 3 + 2 + 1 = 10
+      <br> ...
+      <br> sumTo(100) = 100 + 99 + ... + 2 + 1 = 5050
+      <br> Сделайте три варианта решения:
+      <br> С использованием цикла.
+      <br> Через рекурсию, т.к. sumTo(n) = n + sumTo(n-1) для n > 1.
+      <br>
+
+    </p>
+  </div>
+
+  <h3>Код:</h3>
+  <code>
+    <pre class="mark">
+      var userAnswer = +prompt('Введите число', 0);
+
+      // Loop
+      function sumTo1(n) {
+        var sum = 0;
+        var i = 0;
+
+        while (i &lt; n) {
+          i++;
+          sum += i;
+        }
+        return sum;
+      }
+      document.write(sumTo1(userAnswer) + ' - Loop' + '&lt;br&gt;');
+
+      // Recursion
+      function sumTo2(n) {
+        if (n == 1 || n == 0) return n;
+        return n + sumTo2(n - 1);
+      }
+      document.write(sumTo2(userAnswer) + ' - Recursion' + '&lt;br&gt;');
+    </pre>
+  </code>
+
+  <h3>Результат:</h3>
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>

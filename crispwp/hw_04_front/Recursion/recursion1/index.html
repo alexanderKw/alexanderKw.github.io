@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Recursion 1</title>
+  <style>
+    .mark {
+      background-color: #eee;
+      padding: 10px 0;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h3>Задание:</h3>
+
+  <p>1) Спросить у пользователя натуральное число(n).
+    <br> 2) Написать рекурсивную функцию которая будет выводить все от 1 до n.
+  </p>
+
+  <h3>Код:</h3>
+  <code>
+    <pre class="mark">
+      var userAnswer = +prompt('Введите натуральное число', 0);
+
+      function getNumbers(n) {
+        if (n >= 1) {
+          getNumbers(n - 1);
+          document.write(n);
+        }
+      }
+  
+      getNumbers(userAnswer);
+    </pre>
+  </code>
+
+  <h3>Результат:</h3>
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>

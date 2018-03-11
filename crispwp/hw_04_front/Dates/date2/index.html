@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Date 2</title>
+  <style>
+    .mark {
+      background-color: #eee;
+      padding: 10px 0;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h3>Задание:</h3>
+
+  <p>Написать функцию, которая выводит на экран дату, которая наступит через n дней от сегодняшней.</p>
+
+  <h3>Код:</h3>
+  <code>
+    <pre class="mark">
+      var userDate = +prompt('Введите число от 1 до 1000', 'от 1 до 1000');
+
+      if (isNaN(userDate)) {
+        document.write('Должно быть число!');
+      } else if (userDate &lt; 1 || userDate &gt; 1000) {
+        document.write('Число от 1 до 1000!');
+      } else {
+        getNewDate(userDate);
+      }
+
+      function getNewDate(newDate) {
+        var months   = ['январь', 'февраль', 'март', 'апрель', 'май', 'июнь', 'июль', 'август', 'сентябрь', 'октябрь', 'ноябрь', 'декабрь'];
+        var weekdays = ['воскресенье', 'понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота'];
+
+        var currentDate = new Date();
+        currentDate.setDate(currentDate.getDate() + newDate);
+
+        var newYear     = currentDate.getFullYear();
+        var newMonth    = currentDate.getMonth();
+        var newWeekDay  = currentDate.getDay();
+        var newMonthDay = currentDate.getDate();
+
+        document.write(
+          'Через '        + newDate + ' дней будет вот такая дата:' + '&lt;br&gt;',
+          'День недели: ' + '&lt;b&gt;' + weekdays[newWeekDay]   + '&lt;/b&gt;' + '&lt;br&gt;',
+          'Число: '       + '&lt;b&gt;' + newMonthDay            + '&lt;/b&gt;' + '&lt;br&gt;',
+          'Месяц: '       + '&lt;b&gt;' + months[newMonth]       + '&lt;/b&gt;' + '&lt;br&gt;',
+          'Год: '         + '&lt;b&gt;' + newYear                + '&lt;/b&gt;' + '&lt;br&gt;'
+        );
+      }
+    </pre>
+  </code>
+
+  <h3>Результат:</h3>
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>
