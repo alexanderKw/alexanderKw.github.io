@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>jqCalculator</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .wr-calc {
+      width: 300px;
+      margin: 0 auto;
+      border: 1px solid #000;
+      background-color: #eeeeee;
+      padding: 15px;
+    }
+
+    label {
+      margin-bottom: 15px;
+    }
+
+    label,
+    input {
+      width: 100%;
+      display: block;
+    }
+
+    .buttons {
+      overflow: hidden;
+    }
+
+    .btn {
+      float: left;
+      width: 24%;
+      height: 30px;
+    }
+
+    .btn+.btn {
+      margin-left: 3px;
+    }
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+  <div class="wr-calc">
+    <div class="fields">
+      <label for="">Значение 1
+        <input type="text" class="field field-1" value="" placeholder="0">
+      </label>
+      <label for="">Значение 2
+        <input type="text" class="field field-2" value="" placeholder="0">
+      </label>
+      <label for="">Результат
+        <input type="text" class="result" value="0" disabled>
+      </label>
+    </div>
+    <div class="buttons">
+      <button class="btn">+</button>
+      <button class="btn">-</button>
+      <button class="btn">*</button>
+      <button class="btn">/</button>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>
