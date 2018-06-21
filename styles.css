@@ -1,0 +1,39 @@
+body {
+  font: 16px/1.2 Arial, Helvetica, sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #166088;
+}
+
+a:hover {
+  opacity: .7;
+}
+
+h1 {
+  text-align: center;
+  color: #4F6D7A;
+}
+
+.wr-projects {
+  padding: 10px;
+}
+
+.list-projects {
+  background-color: #DBE9EE;
+  border: 1px solid #4F6D7A;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 2px 2px 8px 0 #166088;
+}
+
+.list-projects li {
+  margin-bottom: 15px;
+}
