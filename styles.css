@@ -37,3 +37,7 @@ h1 {
 .list-projects li {
   margin-bottom: 15px;
 }
+
+.list-projects a {
+  display: block;
+}
