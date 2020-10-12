@@ -1,1 +1,1 @@
-# Emojizz
+# GitHub Pages
